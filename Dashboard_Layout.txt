@@ -1,0 +1,32 @@
+PROFESSIONAL SINGLE-PAGE DASHBOARD LAYOUT
+
+Canvas: 16:9
+
+HEADER
+┌────────────────────────────────────────────────────────────────────────────┐
+│ FINANCIAL PERFORMANCE & SALES ANALYTICS                 [Date Slicer]     │
+│ Executive overview of sales, profit, cost and business performance         │
+├──────────────┬──────────────┬──────────────┬──────────────┬────────────────┤
+│ TOTAL SALES  │ TOTAL PROFIT │ PROFIT MARGIN│ UNITS SOLD   │ SALES YoY %     │
+│    CARD      │    CARD      │    CARD      │    CARD      │     CARD        │
+├──────────────────────────────────┬─────────────────────────────────────────┤
+│ SALES & PROFIT TREND              │ SALES BY SEGMENT                        │
+│ Line chart                        │ Donut chart                             │
+├──────────────────────────────────┼─────────────────────────────────────────┤
+│ SALES BY COUNTRY                 │ TOP PRODUCTS                            │
+│ Horizontal bar chart             │ Horizontal bar chart                    │
+├──────────────────────────────────┴─────────────────────────────────────────┤
+│ PERFORMANCE MATRIX: Country | Segment | Sales | Profit | Margin            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+SLICERS:
+Date | Country | Segment | Product
+
+DESIGN RULES:
+• Use one dark background and one accent blue.
+• Keep titles short.
+• Use consistent number formats.
+• Avoid overcrowding.
+• Keep slicers in one clean row.
+• Use conditional formatting in the matrix.
+• Enable cross-filtering between visuals.
