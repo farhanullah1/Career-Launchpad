@@ -1,0 +1,72 @@
+-- WEEK 5 TASK 05: FINANCIAL PERFORMANCE DASHBOARD
+-- Source: Microsoft Power BI Financial Sample
+
+-- Core measures
+Total Sales = SUM(Financials[Sales])
+
+Total Profit = SUM(Financials[Profit])
+
+Total COGS = SUM(Financials[COGS])
+
+Total Units Sold = SUM(Financials[Units Sold])
+
+Average Sales = AVERAGE(Financials[Sales])
+
+Average Profit = AVERAGE(Financials[Profit])
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+
+-- Calculated column
+Profit Margin Row % = DIVIDE(Financials[Profit], Financials[Sales], 0)
+
+-- Date/year helper column if needed
+Year = YEAR(Financials[Date])
+
+Month Name = FORMAT(Financials[Date], "MMM")
+
+-- Growth measure
+Sales Previous Year =
+CALCULATE(
+    [Total Sales],
+    DATEADD(Financials[Date], -1, YEAR)
+)
+
+Sales YoY % =
+DIVIDE(
+    [Total Sales] - [Sales Previous Year],
+    [Sales Previous Year],
+    0
+)
+
+Profit Previous Year =
+CALCULATE(
+    [Total Profit],
+    DATEADD(Financials[Date], -1, YEAR)
+)
+
+Profit YoY % =
+DIVIDE(
+    [Total Profit] - [Profit Previous Year],
+    [Profit Previous Year],
+    0
+)
+
+-- Ranking
+Country Sales Rank =
+RANKX(
+    ALL(Financials[Country]),
+    [Total Sales],
+    ,
+    DESC,
+    Dense
+)
+
+-- Optional running total
+Running Sales =
+CALCULATE(
+    [Total Sales],
+    FILTER(
+        ALLSELECTED(Financials[Date]),
+        Financials[Date] <= MAX(Financials[Date])
+    )
+)

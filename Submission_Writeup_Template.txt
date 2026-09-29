@@ -1,0 +1,36 @@
+WEEK 5 — TASK 05
+POWER BI — DATA IMPORT, TRANSFORMATION & INTERACTIVE DASHBOARD
+
+Dashboard Title:
+Financial Performance & Sales Analytics
+
+Dataset:
+Microsoft Power BI Financial Sample.
+
+Objective:
+The dashboard provides an interactive view of sales, profit, cost of goods sold, units sold, market segment, country/region, product, and time-based performance. The report is designed to move from raw financial data to a decision-ready visual summary.
+
+KPIs:
+1. Total Sales — overall sales value.
+2. Total Profit — total profit generated.
+3. Profit Margin % — profit as a percentage of sales.
+4. Total Units Sold — total quantity sold.
+5. Sales YoY % — year-over-year sales change where the date range supports it.
+
+Visuals:
+• KPI cards at the top.
+• Line chart for sales/profit trend over time.
+• Clustered bar chart for sales by country.
+• Donut chart for sales by segment.
+• Bar chart for top products.
+• Matrix/table for country, sales, profit, and margin.
+• Slicers for Date, Segment, Country, and Product.
+
+Key insights to report:
+• Identify the highest-sales country/region from the dashboard.
+• Identify the highest-profit product or segment.
+• Identify the strongest/weakest period in the time trend.
+• Comment on the relationship between sales and profit.
+
+Note:
+The exact values and rankings should be taken from the final Power BI dashboard after the dataset is loaded and filtered. Do not write invented numerical findings.

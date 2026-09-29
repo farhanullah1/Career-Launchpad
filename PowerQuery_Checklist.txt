@@ -1,0 +1,23 @@
+WEEK 5 TASK 05 — POWER QUERY TRANSFORMATION CHECKLIST
+
+1. Home → Transform data → Power Query Editor.
+2. Confirm the Financials query/table is loaded.
+3. Remove completely blank rows.
+4. Remove duplicate records if duplicates exist.
+5. Set correct data types:
+   Date → Date
+   Sales → Decimal Number
+   COGS → Decimal Number
+   Profit → Decimal Number
+   Units Sold → Whole Number
+   Discount Band → Text
+   Segment → Text
+   Country → Text
+   Product → Text
+6. Rename unclear columns only if necessary.
+7. Check null/blank values.
+8. Replace or handle missing values where appropriate.
+9. Add Year and Month columns if needed.
+10. Close & Apply.
+
+For a clean submission, take one screenshot of the Power Query steps/pane and keep it with your documentation.

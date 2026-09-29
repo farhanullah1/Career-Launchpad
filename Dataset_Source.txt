@@ -1,0 +1,14 @@
+DATASET SOURCE
+Microsoft Power BI Financial Sample
+
+Official source:
+https://learn.microsoft.com/en-us/power-bi/create-reports/sample-financial-download
+
+Microsoft describes this workbook as sample financial data containing sales and profit data organized by market segment and country/region.
+
+Power BI Desktop can also load the Financials sample directly through its sample-data option.
+
+Suggested dashboard topic:
+FINANCIAL PERFORMANCE & SALES ANALYTICS
+
+Use the official Financial Sample rather than inventing random numbers.
